@@ -359,25 +359,38 @@ export const LandingScreen: React.FC<LandingScreenProps> = ({
 
       {/* Trust & Stats footer */}
       <footer className="border-t border-slate-200/80 bg-white/60 py-6 px-6">
-        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <div className="flex items-center gap-6">
-            <div className="flex items-center gap-1.5">
-              <ShieldCheck className="w-4 h-4 text-emerald-600" />
-              <span>Multi-tier Verification Pipeline</span>
+        <div className="max-w-6xl mx-auto space-y-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+            <div className="flex items-center gap-6">
+              <div className="flex items-center gap-1.5">
+                <ShieldCheck className="w-4 h-4 text-emerald-600" />
+                <span>Multi-tier Verification Pipeline</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <Cpu className="w-4 h-4 text-indigo-600" />
+                <span>AI Assisted • Human In The Loop</span>
+              </div>
+              <div className="flex items-center gap-1.5 hidden md:flex">
+                <Users className="w-4 h-4 text-slate-600" />
+                <span>Institutional Privacy Preserved</span>
+              </div>
             </div>
-            <div className="flex items-center gap-1.5">
-              <Cpu className="w-4 h-4 text-indigo-600" />
-              <span>AI Assisted • Human In The Loop</span>
-            </div>
-            <div className="flex items-center gap-1.5 hidden md:flex">
-              <Users className="w-4 h-4 text-slate-600" />
-              <span>Institutional Privacy Preserved</span>
+            <div className="flex items-center gap-2">
+              <span>EduVault AI Platform • Built for Higher Education</span>
+              <span>•</span>
+              <span className="text-indigo-600 font-medium">{t('studiqueCampusCompanion')}</span>
             </div>
           </div>
-          <div className="flex items-center gap-2">
-            <span>EduVault AI Platform • Built for Higher Education</span>
-            <span>•</span>
-            <span className="text-indigo-600 font-medium">{t('studiqueCampusCompanion')}</span>
+          <div className="pt-4 border-t border-slate-200/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+            <div className="flex items-center gap-1.5 font-medium">
+              <span>© {new Date().getFullYear()} EduVault AI. All rights reserved.</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <span className="text-slate-500">Created by</span>
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-indigo-50 text-indigo-700 border border-indigo-200/60 shadow-xs">
+                ✨ Alchemists
+              </span>
+            </div>
           </div>
         </div>
       </footer>

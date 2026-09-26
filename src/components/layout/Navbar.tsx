@@ -86,7 +86,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   </span>
                 </div>
                 <p className="text-[10px] text-slate-500 font-medium -mt-0.5 hidden sm:block">
-                  Verified Academic Ecosystem
+                  Verified Academic Ecosystem • By Alchemists
                 </p>
               </div>
             </button>

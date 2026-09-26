@@ -444,6 +444,23 @@ export default function App() {
 
       </main>
 
+      {/* Global Role Views Footer */}
+      <footer className="border-t border-slate-200/80 bg-white/70 backdrop-blur-xs py-4 px-6 text-xs text-slate-500 mb-16 md:mb-0">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div className="flex items-center gap-2">
+            <span className="font-semibold text-slate-700">EduVault AI</span>
+            <span>•</span>
+            <span>© {new Date().getFullYear()} All rights reserved.</span>
+          </div>
+          <div className="flex items-center gap-1.5 font-medium">
+            <span className="text-slate-500">Created by</span>
+            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-indigo-50 text-indigo-700 border border-indigo-200/60 shadow-xs">
+              ✨ Alchemists
+            </span>
+          </div>
+        </div>
+      </footer>
+
       {/* Bottom Mobile Navigation */}
       <div className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 py-2 px-4 flex items-center justify-around text-xs font-semibold">
         {currentRole === 'student' && (

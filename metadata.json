@@ -2,5 +2,7 @@
   "name": "EduVault AI",
   "description": "Modern, interactive AI-powered educational resource platform for students, educators, and institutions.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
